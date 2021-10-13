@@ -1,8 +1,8 @@
 //
 //  Persistence.swift
-//  WhatsHappenin
+//  CampusSale
 //
-//  Created by Christian Tingle on 9/7/21.
+//  Created by Eric Chang on 10/13/21.
 //
 
 import CoreData
@@ -31,7 +31,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "WhatsHappenin")
+        container = NSPersistentContainer(name: "CampusSale")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }

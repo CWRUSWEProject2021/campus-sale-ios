@@ -1,14 +1,14 @@
 //
-//  WhatsHappeninApp.swift
-//  WhatsHappenin
+//  CampusSaleApp.swift
+//  CampusSale
 //
-//  Created by Christian Tingle on 9/7/21.
+//  Created by Eric Chang on 10/13/21.
 //
 
 import SwiftUI
 
 @main
-struct WhatsHappeninApp: App {
+struct CampusSaleApp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {

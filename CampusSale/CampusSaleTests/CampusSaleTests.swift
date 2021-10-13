@@ -1,14 +1,14 @@
 //
-//  WhatsHappeninTests.swift
-//  WhatsHappeninTests
+//  CampusSaleTests.swift
+//  CampusSaleTests
 //
-//  Created by Christian Tingle on 9/7/21.
+//  Created by Eric Chang on 10/13/21.
 //
 
 import XCTest
-@testable import WhatsHappenin
+@testable import CampusSale
 
-class WhatsHappeninTests: XCTestCase {
+class CampusSaleTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
