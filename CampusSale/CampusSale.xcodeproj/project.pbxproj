@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		071F85E02717594100979CFC /* CampusSale.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 071F85DE2717594100979CFC /* CampusSale.xcdatamodeld */; };
 		071F85EB2717594200979CFC /* CampusSaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F85EA2717594200979CFC /* CampusSaleTests.swift */; };
 		071F85F62717594200979CFC /* CampusSaleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F85F52717594200979CFC /* CampusSaleUITests.swift */; };
+		071F860527175E5600979CFC /* Siesta in Frameworks */ = {isa = PBXBuildFile; productRef = 071F860427175E5600979CFC /* Siesta */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071F860527175E5600979CFC /* Siesta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +154,9 @@
 			dependencies = (
 			);
 			name = CampusSale;
+			packageProductDependencies = (
+				071F860427175E5600979CFC /* Siesta */,
+			);
 			productName = CampusSale;
 			productReference = 071F85D02717593E00979CFC /* CampusSale.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = 071F85C72717593E00979CFC;
+			packageReferences = (
+				071F860327175E5600979CFC /* XCRemoteSwiftPackageReference "siesta" */,
+			);
 			productRefGroup = 071F85D12717593E00979CFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		071F860327175E5600979CFC /* XCRemoteSwiftPackageReference "siesta" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bustoutsolutions/siesta.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		071F860427175E5600979CFC /* Siesta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 071F860327175E5600979CFC /* XCRemoteSwiftPackageReference "siesta" */;
+			productName = Siesta;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		071F85DE2717594100979CFC /* CampusSale.xcdatamodeld */ = {
