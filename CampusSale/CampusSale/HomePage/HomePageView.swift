@@ -14,14 +14,12 @@ struct HomePageView: View {
     @State var selectedIndex = 0
     let icons = [
         "house",
-        "map",
-        "calendar",
         "list.bullet",
-        "person"
+        "person",
     ]
     
     @State var searchText: String
-    
+    @State private var addMode = false
     var body: some View {
     
         VStack{
@@ -29,35 +27,29 @@ struct HomePageView: View {
                 switch selectedIndex {
                 case 0:
                     VStack {
-                        Text("Feed").padding()
-                        Spacer()
-                    }
-                    .navigationTitle("Feed")
-                case 1:
-                    VStack {
-                        Text("Map View")
-                        Spacer()
-                    }
-                    .navigationTitle("Map View")
-                    
-                case 2:
-                    VStack {
                         SearchBar(text1: $searchText)
-                        List(places.filter({ searchText.isEmpty ? true : $0.eventName.contains(searchText) })) { item in
-                            NavigationLink(item.eventName, destination: ItemListingView())}
-                        Spacer()
-                    }
-                    .navigationTitle("Your Events")
-                    
-                case 3:
-                    VStack {
-                        SearchBar(text1: $searchText)
-
-                        //List no longer opens up for now but the filter works :)
                         List(places.filter({ searchText.isEmpty ? true : $0.eventName.contains(searchText) })) { item in NavigationLink(item.eventName, destination: ItemListingView())}
                         Spacer()
                     }
-                    .navigationTitle("Events")
+                    .navigationTitle("Items")
+                case 1:
+                    VStack {
+                        NavigationLink(destination:
+                                        CreateEventView()){
+                            Image(systemName: "plus")
+                                                .resizable()
+                                                .padding(6)
+                                                .frame(width: 24, height: 24)
+                                                .background(Color.blue)
+                                                .clipShape(Circle())
+                                                .foregroundColor(.white)
+                    }
+                        Text("Your Items")
+                        Spacer()
+                    }
+                    .navigationTitle("Your items")
+                    
+                
                 default:
                     VStack {
                         Text("Profile")
@@ -68,7 +60,7 @@ struct HomePageView: View {
                 }
             }
             HStack{
-                ForEach(0..<5, id: \.self) { number in
+                ForEach(0..<3, id: \.self) { number in
                     Spacer()
                     Button(action: {
                         self.selectedIndex = number
