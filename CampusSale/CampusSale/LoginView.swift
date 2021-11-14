@@ -14,6 +14,11 @@ import CoreData
 
 struct LoginView : View {
     
+    init() {
+        Webservice().fetchTest() {
+            print($0)
+        }
+    }
     
     var body: some View {
             NavigationView{
@@ -39,6 +44,7 @@ private let itemFormatter: DateFormatter = {
     formatter.timeStyle = .medium
     return formatter
 }()
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -140,3 +146,7 @@ struct Register: View {
         }
     }
 }
+
+
+
+

@@ -37,6 +37,8 @@
 		078F51E2271CD59100E57474 /* ItemListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F51E1271CD59100E57474 /* ItemListingView.swift */; };
 		078F51E3271CD59100E57474 /* ItemListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F51E1271CD59100E57474 /* ItemListingView.swift */; };
 		078F51E4271CD59100E57474 /* ItemListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F51E1271CD59100E57474 /* ItemListingView.swift */; };
+		935B89592741A428001FCAD8 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B89582741A428001FCAD8 /* Test.swift */; };
+		935B895B2741A634001FCAD8 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B895A2741A634001FCAD8 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		078F51D9271CD4BD00E57474 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		078F51DD271CD53200E57474 /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
 		078F51E1271CD59100E57474 /* ItemListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListingView.swift; sourceTree = "<group>"; };
+		935B89582741A428001FCAD8 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		935B895A2741A634001FCAD8 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Webservice.swift; path = ../../../../Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +133,10 @@
 		071F85D22717593E00979CFC /* CampusSale */ = {
 			isa = PBXGroup;
 			children = (
+				935B89572741A411001FCAD8 /* Datatypes */,
 				071F85D32717593E00979CFC /* CampusSaleApp.swift */,
 				071F85D52717593E00979CFC /* LoginView.swift */,
+				935B895A2741A634001FCAD8 /* Webservice.swift */,
 				078F51D0271CD3DA00E57474 /* HomePage */,
 				071F85D72717594100979CFC /* Assets.xcassets */,
 				078F51CB271CD2A800E57474 /* Registration */,
@@ -187,6 +193,14 @@
 				074AE79C2723526F00A0FBF1 /* CreateEventView.swift */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		935B89572741A411001FCAD8 /* Datatypes */ = {
+			isa = PBXGroup;
+			children = (
+				935B89582741A428001FCAD8 /* Test.swift */,
+			);
+			path = Datatypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				078F51D6271CD47D00E57474 /* SearchBar.swift in Sources */,
+				935B89592741A428001FCAD8 /* Test.swift in Sources */,
 				071F85DD2717594100979CFC /* Persistence.swift in Sources */,
 				074AE79D2723526F00A0FBF1 /* CreateEventView.swift in Sources */,
 				071F85E02717594100979CFC /* CampusSale.xcdatamodeld in Sources */,
@@ -333,6 +348,7 @@
 				078F51DA271CD4BD00E57474 /* Place.swift in Sources */,
 				071F85D62717593E00979CFC /* LoginView.swift in Sources */,
 				071F85D42717593E00979CFC /* CampusSaleApp.swift in Sources */,
+				935B895B2741A634001FCAD8 /* Webservice.swift in Sources */,
 				078F51D2271CD3F200E57474 /* HomePageView.swift in Sources */,
 				078F51CD271CD2E300E57474 /* RegistrationView.swift in Sources */,
 			);
