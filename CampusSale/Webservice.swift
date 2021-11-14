@@ -36,7 +36,7 @@ class Webservice {
     
     func fetchUserProfile(completionHandler: @escaping ([UserData]) -> Void) {
         
-        let url = URL(string: "https://127.0.0.1:5000/user/test_fname1")!
+        let url = URL(string: "https://127.0.0.1:5000/user/test_user1")!
 
         let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
             if let error = error {
