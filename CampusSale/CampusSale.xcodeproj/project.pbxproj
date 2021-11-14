@@ -38,7 +38,8 @@
 		078F51E3271CD59100E57474 /* ItemListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F51E1271CD59100E57474 /* ItemListingView.swift */; };
 		078F51E4271CD59100E57474 /* ItemListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F51E1271CD59100E57474 /* ItemListingView.swift */; };
 		935B89592741A428001FCAD8 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B89582741A428001FCAD8 /* Test.swift */; };
-		935B895B2741A634001FCAD8 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B895A2741A634001FCAD8 /* Webservice.swift */; };
+		93DFD56B2741AF520094F7A4 /* DBData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFD56A2741AF510094F7A4 /* DBData.swift */; };
+		93FB44CB2741AA4600987401 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FB44CA2741AA4600987401 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +82,8 @@
 		078F51DD271CD53200E57474 /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
 		078F51E1271CD59100E57474 /* ItemListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListingView.swift; sourceTree = "<group>"; };
 		935B89582741A428001FCAD8 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		935B895A2741A634001FCAD8 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Webservice.swift; path = ../../../../Webservice.swift; sourceTree = "<group>"; };
+		93DFD56A2741AF510094F7A4 /* DBData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBData.swift; sourceTree = "<group>"; };
+		93FB44CA2741AA4600987401 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +135,10 @@
 		071F85D22717593E00979CFC /* CampusSale */ = {
 			isa = PBXGroup;
 			children = (
+				93FB44CA2741AA4600987401 /* Webservice.swift */,
 				935B89572741A411001FCAD8 /* Datatypes */,
 				071F85D32717593E00979CFC /* CampusSaleApp.swift */,
 				071F85D52717593E00979CFC /* LoginView.swift */,
-				935B895A2741A634001FCAD8 /* Webservice.swift */,
 				078F51D0271CD3DA00E57474 /* HomePage */,
 				071F85D72717594100979CFC /* Assets.xcassets */,
 				078F51CB271CD2A800E57474 /* Registration */,
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				935B89582741A428001FCAD8 /* Test.swift */,
+				93DFD56A2741AF510094F7A4 /* DBData.swift */,
 			);
 			path = Datatypes;
 			sourceTree = "<group>";
@@ -348,9 +351,10 @@
 				078F51DA271CD4BD00E57474 /* Place.swift in Sources */,
 				071F85D62717593E00979CFC /* LoginView.swift in Sources */,
 				071F85D42717593E00979CFC /* CampusSaleApp.swift in Sources */,
-				935B895B2741A634001FCAD8 /* Webservice.swift in Sources */,
+				93FB44CB2741AA4600987401 /* Webservice.swift in Sources */,
 				078F51D2271CD3F200E57474 /* HomePageView.swift in Sources */,
 				078F51CD271CD2E300E57474 /* RegistrationView.swift in Sources */,
+				93DFD56B2741AF520094F7A4 /* DBData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

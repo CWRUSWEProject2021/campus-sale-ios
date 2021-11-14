@@ -15,7 +15,7 @@ import CoreData
 struct LoginView : View {
     
     init() {
-        Webservice().fetchTest() {
+        Webservice().fetchUserProfile() {
             print($0)
         }
     }
