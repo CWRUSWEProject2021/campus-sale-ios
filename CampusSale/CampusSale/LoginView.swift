@@ -15,9 +15,7 @@ import CoreData
 struct LoginView : View {
     
     init() {
-        Webservice().fetchUserProfile() {
-            print($0)
-        }
+        CSAPI().loginRequest()
     }
     
     var body: some View {
@@ -88,7 +86,7 @@ struct PasswordField: View {
 struct LoginButton: View {
     var body: some View {
         NavigationLink(destination:
-                        HomePageView(places:Place.samples(), searchText: "")){
+                        RootTabbedView()){
         Text("LOGIN")
             .font(.headline)
             .foregroundColor(.white)

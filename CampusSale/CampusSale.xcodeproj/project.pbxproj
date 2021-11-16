@@ -11,7 +11,6 @@
 		071F85D62717593E00979CFC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F85D52717593E00979CFC /* LoginView.swift */; };
 		071F85D82717594100979CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071F85D72717594100979CFC /* Assets.xcassets */; };
 		071F85DB2717594100979CFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071F85DA2717594100979CFC /* Preview Assets.xcassets */; };
-		071F85DD2717594100979CFC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F85DC2717594100979CFC /* Persistence.swift */; };
 		071F85E02717594100979CFC /* CampusSale.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 071F85DE2717594100979CFC /* CampusSale.xcdatamodeld */; };
 		071F85EB2717594200979CFC /* CampusSaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F85EA2717594200979CFC /* CampusSaleTests.swift */; };
 		071F85F62717594200979CFC /* CampusSaleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F85F52717594200979CFC /* CampusSaleUITests.swift */; };
@@ -19,6 +18,24 @@
 		074AE79D2723526F00A0FBF1 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateEventView.swift */; };
 		074AE79E2723526F00A0FBF1 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateEventView.swift */; };
 		074AE79F2723526F00A0FBF1 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateEventView.swift */; };
+		07506BDE27422F6100B5D9C0 /* PersistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BDD27422F6100B5D9C0 /* PersistanceController.swift */; };
+		07506BDF27422F6100B5D9C0 /* PersistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BDD27422F6100B5D9C0 /* PersistanceController.swift */; };
+		07506BE027422F6100B5D9C0 /* PersistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BDD27422F6100B5D9C0 /* PersistanceController.swift */; };
+		07506BE72742336300B5D9C0 /* FeedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BE62742336300B5D9C0 /* FeedTab.swift */; };
+		07506BE82742336300B5D9C0 /* FeedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BE62742336300B5D9C0 /* FeedTab.swift */; };
+		07506BE92742336300B5D9C0 /* FeedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BE62742336300B5D9C0 /* FeedTab.swift */; };
+		07506BEB2742338A00B5D9C0 /* RootTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BEA2742338A00B5D9C0 /* RootTabbedView.swift */; };
+		07506BEC2742338A00B5D9C0 /* RootTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BEA2742338A00B5D9C0 /* RootTabbedView.swift */; };
+		07506BED2742338A00B5D9C0 /* RootTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BEA2742338A00B5D9C0 /* RootTabbedView.swift */; };
+		07506BEF274233EA00B5D9C0 /* UserItemsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BEE274233EA00B5D9C0 /* UserItemsTab.swift */; };
+		07506BF0274233EA00B5D9C0 /* UserItemsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BEE274233EA00B5D9C0 /* UserItemsTab.swift */; };
+		07506BF1274233EA00B5D9C0 /* UserItemsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BEE274233EA00B5D9C0 /* UserItemsTab.swift */; };
+		07506BF3274234AC00B5D9C0 /* UserProfileTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BF2274234AC00B5D9C0 /* UserProfileTab.swift */; };
+		07506BF4274234AC00B5D9C0 /* UserProfileTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BF2274234AC00B5D9C0 /* UserProfileTab.swift */; };
+		07506BF5274234AC00B5D9C0 /* UserProfileTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BF2274234AC00B5D9C0 /* UserProfileTab.swift */; };
+		07506BF727423E6B00B5D9C0 /* CSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BF627423E6B00B5D9C0 /* CSAPI.swift */; };
+		07506BF827423E6B00B5D9C0 /* CSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BF627423E6B00B5D9C0 /* CSAPI.swift */; };
+		07506BF927423E6B00B5D9C0 /* CSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BF627423E6B00B5D9C0 /* CSAPI.swift */; };
 		078F51CD271CD2E300E57474 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F51CC271CD2E300E57474 /* RegistrationView.swift */; };
 		078F51CE271CD2E300E57474 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F51CC271CD2E300E57474 /* RegistrationView.swift */; };
 		078F51CF271CD2E300E57474 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F51CC271CD2E300E57474 /* RegistrationView.swift */; };
@@ -65,7 +82,6 @@
 		071F85D52717593E00979CFC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		071F85D72717594100979CFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		071F85DA2717594100979CFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		071F85DC2717594100979CFC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		071F85DF2717594100979CFC /* CampusSale.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CampusSale.xcdatamodel; sourceTree = "<group>"; };
 		071F85E12717594100979CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		071F85E62717594200979CFC /* CampusSaleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusSaleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +91,12 @@
 		071F85F52717594200979CFC /* CampusSaleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusSaleUITests.swift; sourceTree = "<group>"; };
 		071F85F72717594200979CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		074AE79C2723526F00A0FBF1 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
+		07506BDD27422F6100B5D9C0 /* PersistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceController.swift; sourceTree = "<group>"; };
+		07506BE62742336300B5D9C0 /* FeedTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTab.swift; sourceTree = "<group>"; };
+		07506BEA2742338A00B5D9C0 /* RootTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabbedView.swift; sourceTree = "<group>"; };
+		07506BEE274233EA00B5D9C0 /* UserItemsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemsTab.swift; sourceTree = "<group>"; };
+		07506BF2274234AC00B5D9C0 /* UserProfileTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTab.swift; sourceTree = "<group>"; };
+		07506BF627423E6B00B5D9C0 /* CSAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAPI.swift; sourceTree = "<group>"; };
 		078F51CC271CD2E300E57474 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		078F51D1271CD3F200E57474 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		078F51D5271CD47D00E57474 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -138,12 +160,13 @@
 				93FB44CA2741AA4600987401 /* Webservice.swift */,
 				935B89572741A411001FCAD8 /* Datatypes */,
 				071F85D32717593E00979CFC /* CampusSaleApp.swift */,
+				07506BF627423E6B00B5D9C0 /* CSAPI.swift */,
 				071F85D52717593E00979CFC /* LoginView.swift */,
 				078F51D0271CD3DA00E57474 /* HomePage */,
 				071F85D72717594100979CFC /* Assets.xcassets */,
 				078F51CB271CD2A800E57474 /* Registration */,
-				071F85DC2717594100979CFC /* Persistence.swift */,
 				071F85E12717594100979CFC /* Info.plist */,
+				07506BDD27422F6100B5D9C0 /* PersistanceController.swift */,
 				071F85DE2717594100979CFC /* CampusSale.xcdatamodeld */,
 				071F85D92717594100979CFC /* Preview Content */,
 			);
@@ -176,6 +199,16 @@
 			path = CampusSaleUITests;
 			sourceTree = "<group>";
 		};
+		07506BE52742335100B5D9C0 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				07506BE62742336300B5D9C0 /* FeedTab.swift */,
+				07506BEE274233EA00B5D9C0 /* UserItemsTab.swift */,
+				07506BF2274234AC00B5D9C0 /* UserProfileTab.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
 		078F51CB271CD2A800E57474 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,7 +220,9 @@
 		078F51D0271CD3DA00E57474 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				07506BE52742335100B5D9C0 /* Tabs */,
 				078F51D1271CD3F200E57474 /* HomePageView.swift */,
+				07506BEA2742338A00B5D9C0 /* RootTabbedView.swift */,
 				078F51D5271CD47D00E57474 /* SearchBar.swift */,
 				078F51D9271CD4BD00E57474 /* Place.swift */,
 				078F51DD271CD53200E57474 /* PlaceView.swift */,
@@ -341,15 +376,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07506BEB2742338A00B5D9C0 /* RootTabbedView.swift in Sources */,
 				078F51D6271CD47D00E57474 /* SearchBar.swift in Sources */,
+				07506BF3274234AC00B5D9C0 /* UserProfileTab.swift in Sources */,
 				935B89592741A428001FCAD8 /* Test.swift in Sources */,
-				071F85DD2717594100979CFC /* Persistence.swift in Sources */,
 				074AE79D2723526F00A0FBF1 /* CreateEventView.swift in Sources */,
 				071F85E02717594100979CFC /* CampusSale.xcdatamodeld in Sources */,
+				07506BF727423E6B00B5D9C0 /* CSAPI.swift in Sources */,
 				078F51DE271CD53200E57474 /* PlaceView.swift in Sources */,
+				07506BE72742336300B5D9C0 /* FeedTab.swift in Sources */,
+				07506BEF274233EA00B5D9C0 /* UserItemsTab.swift in Sources */,
 				078F51E2271CD59100E57474 /* ItemListingView.swift in Sources */,
 				078F51DA271CD4BD00E57474 /* Place.swift in Sources */,
 				071F85D62717593E00979CFC /* LoginView.swift in Sources */,
+				07506BDE27422F6100B5D9C0 /* PersistanceController.swift in Sources */,
 				071F85D42717593E00979CFC /* CampusSaleApp.swift in Sources */,
 				93FB44CB2741AA4600987401 /* Webservice.swift in Sources */,
 				078F51D2271CD3F200E57474 /* HomePageView.swift in Sources */,
@@ -363,10 +403,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				078F51E3271CD59100E57474 /* ItemListingView.swift in Sources */,
+				07506BF4274234AC00B5D9C0 /* UserProfileTab.swift in Sources */,
+				07506BF0274233EA00B5D9C0 /* UserItemsTab.swift in Sources */,
 				078F51DF271CD53200E57474 /* PlaceView.swift in Sources */,
+				07506BDF27422F6100B5D9C0 /* PersistanceController.swift in Sources */,
 				074AE79E2723526F00A0FBF1 /* CreateEventView.swift in Sources */,
 				071F85EB2717594200979CFC /* CampusSaleTests.swift in Sources */,
+				07506BE82742336300B5D9C0 /* FeedTab.swift in Sources */,
+				07506BEC2742338A00B5D9C0 /* RootTabbedView.swift in Sources */,
 				078F51D7271CD47D00E57474 /* SearchBar.swift in Sources */,
+				07506BF827423E6B00B5D9C0 /* CSAPI.swift in Sources */,
 				078F51D3271CD3F200E57474 /* HomePageView.swift in Sources */,
 				078F51CE271CD2E300E57474 /* RegistrationView.swift in Sources */,
 				078F51DB271CD4BD00E57474 /* Place.swift in Sources */,
@@ -378,10 +424,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				078F51E4271CD59100E57474 /* ItemListingView.swift in Sources */,
+				07506BF5274234AC00B5D9C0 /* UserProfileTab.swift in Sources */,
+				07506BF1274233EA00B5D9C0 /* UserItemsTab.swift in Sources */,
 				078F51E0271CD53200E57474 /* PlaceView.swift in Sources */,
+				07506BE027422F6100B5D9C0 /* PersistanceController.swift in Sources */,
 				074AE79F2723526F00A0FBF1 /* CreateEventView.swift in Sources */,
 				071F85F62717594200979CFC /* CampusSaleUITests.swift in Sources */,
+				07506BE92742336300B5D9C0 /* FeedTab.swift in Sources */,
+				07506BED2742338A00B5D9C0 /* RootTabbedView.swift in Sources */,
 				078F51D8271CD47D00E57474 /* SearchBar.swift in Sources */,
+				07506BF927423E6B00B5D9C0 /* CSAPI.swift in Sources */,
 				078F51D4271CD3F200E57474 /* HomePageView.swift in Sources */,
 				078F51CF271CD2E300E57474 /* RegistrationView.swift in Sources */,
 				078F51DC271CD4BD00E57474 /* Place.swift in Sources */,

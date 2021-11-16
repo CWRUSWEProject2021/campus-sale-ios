@@ -18,3 +18,18 @@ struct UserData: Codable {
     let graduation_term: String
     let on_campus: String
 }
+
+struct UserProfileData: Codable {
+    let password: String
+    let user_id: Int
+
+}
+
+struct Product: Codable {
+    let product_id: String
+    let name: String
+    let price: Float
+    let description: String
+    let seller_id: Int
+    let keywords: [String]
+}
