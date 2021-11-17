@@ -6,10 +6,9 @@
 //
 import Foundation
 class CSAPI {
-
     
-    func loginRequest() {
-        guard let url = URL(string: "http://127.0.0.1:5000/profile/test_user1") else {
+    func loginRequest(username: String, password: String, completion: @escaping (Bool) -> ()) {
+        guard let url = URL(string: "http://127.0.0.1:5000/profile/\(username)") else {
             print("Error: cannot create URL")
             return
         }
@@ -47,6 +46,13 @@ class CSAPI {
                     let parsedData = try! decoder.decode(UserProfileData.self, from: data)
                     print(prettyPrintedJson)
                     print(parsedData.password)
+                    DispatchQueue.main.async {
+                        var flag = false
+                        if (password == parsedData.password){
+                            flag = true
+                        }
+                        completion(flag)
+                    }
                 }
                 catch {
                     print("Error: Trying to convert JSON data to string")

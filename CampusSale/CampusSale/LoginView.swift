@@ -15,7 +15,9 @@ import CoreData
 struct LoginView : View {
     
     init() {
-        CSAPI().loginRequest()
+        CSAPI().loginRequest(username: "test_user1", password: "passwordone") { (flag) in
+            print(flag)
+        }
     }
     
     var body: some View {
