@@ -29,6 +29,11 @@ struct loginInfo {
     let password: String
 }
 
+struct UserLoginInfo {
+    let username: String
+    let password: String
+}
+
 struct Product: Codable {
     let product_id: String
     let name: String
