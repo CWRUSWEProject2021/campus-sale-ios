@@ -22,7 +22,11 @@ struct UserData: Codable {
 struct UserProfileData: Codable {
     let password: String
     let user_id: Int
+}
 
+struct loginInfo {
+    let username: String
+    let password: String
 }
 
 struct Product: Codable {

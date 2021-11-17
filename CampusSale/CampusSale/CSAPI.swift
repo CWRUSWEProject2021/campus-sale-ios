@@ -7,7 +7,7 @@
 import Foundation
 class CSAPI {
     
-    func loginRequest(username: String, password: String, completion: @escaping (Bool) -> ()) {
+    func loginRequest(username: String, password: String, completion: @escaping (loginInfo) -> ()) {
         guard let url = URL(string: "http://127.0.0.1:5000/profile/\(username)") else {
             print("Error: cannot create URL")
             return
@@ -47,11 +47,8 @@ class CSAPI {
                     print(prettyPrintedJson)
                     print(parsedData.password)
                     DispatchQueue.main.async {
-                        var flag = false
-                        if (password == parsedData.password){
-                            flag = true
-                        }
-                        completion(flag)
+                        let info = loginInfo(username: username, password: parsedData.password)
+                        completion(info)
                     }
                 }
                 catch {

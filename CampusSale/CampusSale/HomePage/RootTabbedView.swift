@@ -10,10 +10,14 @@ import SwiftUI
 struct RootTabbedView: View {
 //    @Binding var isLoggedIn: Bool
 //
-//    init(isLoggedIn: Binding<Bool>) {
+//   init(isLoggedIn: Binding<Bool>) {
 //        self._isLoggedIn = isLoggedIn
 //        let tabBarAppearance = UITabBarAppearance()
-//        UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+//       if #available(iOS 15.0, *) {
+//           UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+//       } else {
+//           // Fallback on earlier versions
+//       }
 //    }
 
     var body: some View {
@@ -46,9 +50,9 @@ struct RootTabbedView: View {
     }
 }
 
-struct MainTabbedView_Previews: PreviewProvider {
-    static var previews: some View {
-        RootTabbedView()
-}
-}
-
+//struct MainTabbedView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RootTabbedView(isLoggedIn: true)
+//}
+//}
+//
