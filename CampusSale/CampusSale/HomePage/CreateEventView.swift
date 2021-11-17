@@ -103,7 +103,7 @@
 
     struct CreateEvent_Previews: PreviewProvider {
         static var previews: some View {
-            CreateEventView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            CreateEventView()
         }
     }
 

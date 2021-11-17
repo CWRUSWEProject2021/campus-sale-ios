@@ -9,7 +9,7 @@ import SwiftUI
 import CoreData
 
 
-    let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
+let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
 
 let logininfo = UserLoginInfo(username: "", password: "")
 
@@ -18,9 +18,9 @@ struct LoginView : View {
     @State var password: String = ""
     @State var isLoggedIn: Bool = false
     @State var attemptinglogin: Bool = false
-
+    
     var body: some View {
-            NavigationView{
+        NavigationView{
             VStack {
                 Text("Campus Sale")
                     .font(.largeTitle)
@@ -54,43 +54,34 @@ struct LoginView : View {
                 
                 let infos: loginInfo = loginInfo(username: username, password: password)
                 NavigationLink(destination: RootTabbedView(), isActive: $isLoggedIn) {
-                Button(action: {
-                    attemptinglogin = true
-                    CSAPI().loginRequest(username: username, password: password) { (info) in
-                        
-                    if (info.username == username && info.password == password){
-                        print("Login Successful")
-                        print(username)
-                        print(info.username)
-                        print(password)
-                        print(info.password)
-                        isLoggedIn = true
-                        print(isLoggedIn)
+                    Button(action: {
+                        attemptinglogin = true
+                        CSAPI().loginRequest(username: username, password: password) { (info) in
+                            
+                            if (info.username == username && info.password == password){
+                                print("Login Successful")
+                                isLoggedIn = true
+                            }
+                            else{
+                                attemptinglogin = false
+                                print("Login Failed")
+                                //error message popup
+                            }
+                        }
+                    }) {
+                        Text("LOGIN")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(width: 220, height: 60)
+                            .background(Color.orange)
+                            .cornerRadius(15.0)
+                        //                    LoginButton(username:username, password: password)
                     }
-                    else{
-                        attemptinglogin = false
-                        print(username)
-                        print(info.username)
-                        print(password)
-                        print(info.password)
-                        print("Login Failed")
-                        //error message popup
-                    }
-                    }
-                }) {
-                    Text("LOGIN")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(width: 220, height: 60)
-                        .background(Color.orange)
-                        .cornerRadius(15.0)
-//                    LoginButton(username:username, password: password)
-                }
-//                if(isLoggedIn){
-//                    NavigationLink("Home", destination: RootTabbedView())
-//                }
-                
+                    //                if(isLoggedIn){
+                    //                    NavigationLink("Home", destination: RootTabbedView())
+                    //                }
+                    
                 }
                 NavigationLink(destination:RegistrationView()) {
                     Text("REGISTER")
@@ -101,8 +92,8 @@ struct LoginView : View {
                         .background(Color.blue)
                         .cornerRadius(15.0)
                 }
-//                WaitingIndicator()
-//                                .opacity(attemptinglogin ? 1.0 : 0.0)
+                //                WaitingIndicator()
+                //                                .opacity(attemptinglogin ? 1.0 : 0.0)
             }
             .padding()
             .navigationBarHidden(true)
@@ -122,11 +113,11 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        LoginView()
     }
 }
 
-    
+
 
 struct WelcomeMessage: View {
     var body: some View {

@@ -10,16 +10,33 @@ import SwiftUI
 struct FeedTab: View {
     @State var searchText: String
     let places: [Place]
+    @State var items: [Product] = []
     var body: some View {
-        VStack(spacing: 0) {
-            List(places.filter({ searchText.isEmpty ? true : $0.eventName.contains(searchText) })) { item in NavigationLink(item.eventName, destination: ItemListingView())}
-            Spacer()
-        }
+        VStack() {
+            if #available(iOS 15.0, *) {
+                List(items) { item in
+                    NavigationLink(item.name, destination: ItemListingView(item: item))}
+                .refreshable {
+                    CSAPI().requestAllItems { (parsedData) in
+                        self.items = parsedData
+                    }
+//                    .onAppear {
+//                        CSAPI().requestAllItems { (parsedData) in
+//                            self.items = parsedData
+//                        }
+//                    }
+                    //            List(items.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { item in NavigationLink(item.name, destination: ItemListingView(item: items[item]))}
+                    Spacer()
+                }
+            } else {
+                // Fallback on earlier versions
+            }
     }
 }
 
-struct FeedTab_Previews: PreviewProvider {
-    static var previews: some View {
-        FeedTab(searchText: "", places: Place.samples())
-    }
+//struct FeedTab_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FeedTab(searchText: "", places: Place.samples())
+//    }
+//}
 }

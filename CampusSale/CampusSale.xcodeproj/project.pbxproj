@@ -18,9 +18,6 @@
 		074AE79D2723526F00A0FBF1 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateEventView.swift */; };
 		074AE79E2723526F00A0FBF1 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateEventView.swift */; };
 		074AE79F2723526F00A0FBF1 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateEventView.swift */; };
-		07506BDE27422F6100B5D9C0 /* PersistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BDD27422F6100B5D9C0 /* PersistanceController.swift */; };
-		07506BDF27422F6100B5D9C0 /* PersistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BDD27422F6100B5D9C0 /* PersistanceController.swift */; };
-		07506BE027422F6100B5D9C0 /* PersistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BDD27422F6100B5D9C0 /* PersistanceController.swift */; };
 		07506BE72742336300B5D9C0 /* FeedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BE62742336300B5D9C0 /* FeedTab.swift */; };
 		07506BE82742336300B5D9C0 /* FeedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BE62742336300B5D9C0 /* FeedTab.swift */; };
 		07506BE92742336300B5D9C0 /* FeedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BE62742336300B5D9C0 /* FeedTab.swift */; };
@@ -91,7 +88,6 @@
 		071F85F52717594200979CFC /* CampusSaleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusSaleUITests.swift; sourceTree = "<group>"; };
 		071F85F72717594200979CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		074AE79C2723526F00A0FBF1 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
-		07506BDD27422F6100B5D9C0 /* PersistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceController.swift; sourceTree = "<group>"; };
 		07506BE62742336300B5D9C0 /* FeedTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTab.swift; sourceTree = "<group>"; };
 		07506BEA2742338A00B5D9C0 /* RootTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabbedView.swift; sourceTree = "<group>"; };
 		07506BEE274233EA00B5D9C0 /* UserItemsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemsTab.swift; sourceTree = "<group>"; };
@@ -166,7 +162,6 @@
 				071F85D72717594100979CFC /* Assets.xcassets */,
 				078F51CB271CD2A800E57474 /* Registration */,
 				071F85E12717594100979CFC /* Info.plist */,
-				07506BDD27422F6100B5D9C0 /* PersistanceController.swift */,
 				071F85DE2717594100979CFC /* CampusSale.xcdatamodeld */,
 				071F85D92717594100979CFC /* Preview Content */,
 			);
@@ -389,7 +384,6 @@
 				078F51E2271CD59100E57474 /* ItemListingView.swift in Sources */,
 				078F51DA271CD4BD00E57474 /* Place.swift in Sources */,
 				071F85D62717593E00979CFC /* LoginView.swift in Sources */,
-				07506BDE27422F6100B5D9C0 /* PersistanceController.swift in Sources */,
 				071F85D42717593E00979CFC /* CampusSaleApp.swift in Sources */,
 				93FB44CB2741AA4600987401 /* Webservice.swift in Sources */,
 				078F51D2271CD3F200E57474 /* HomePageView.swift in Sources */,
@@ -406,7 +400,6 @@
 				07506BF4274234AC00B5D9C0 /* UserProfileTab.swift in Sources */,
 				07506BF0274233EA00B5D9C0 /* UserItemsTab.swift in Sources */,
 				078F51DF271CD53200E57474 /* PlaceView.swift in Sources */,
-				07506BDF27422F6100B5D9C0 /* PersistanceController.swift in Sources */,
 				074AE79E2723526F00A0FBF1 /* CreateEventView.swift in Sources */,
 				071F85EB2717594200979CFC /* CampusSaleTests.swift in Sources */,
 				07506BE82742336300B5D9C0 /* FeedTab.swift in Sources */,
@@ -427,7 +420,6 @@
 				07506BF5274234AC00B5D9C0 /* UserProfileTab.swift in Sources */,
 				07506BF1274233EA00B5D9C0 /* UserItemsTab.swift in Sources */,
 				078F51E0271CD53200E57474 /* PlaceView.swift in Sources */,
-				07506BE027422F6100B5D9C0 /* PersistanceController.swift in Sources */,
 				074AE79F2723526F00A0FBF1 /* CreateEventView.swift in Sources */,
 				071F85F62717594200979CFC /* CampusSaleUITests.swift in Sources */,
 				07506BE92742336300B5D9C0 /* FeedTab.swift in Sources */,

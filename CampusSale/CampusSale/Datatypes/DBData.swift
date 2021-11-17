@@ -34,11 +34,16 @@ struct UserLoginInfo {
     let password: String
 }
 
-struct Product: Codable {
-    let product_id: String
+struct Product: Codable, Identifiable{
+    var id: Int { product_id }
+    let description: String
+    let keywords: String
     let name: String
     let price: Float
-    let description: String
+    let product_id: Int
     let seller_id: Int
-    let keywords: [String]
+}
+
+struct Products: Codable {
+    let product: [Product]
 }
