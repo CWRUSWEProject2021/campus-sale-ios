@@ -51,9 +51,8 @@ struct LoginView : View {
                     .background(lightGreyColor)
                     .cornerRadius(5.0)
                     .padding(.bottom, 10)
-                
-                let infos: loginInfo = loginInfo(username: username, password: password)
-                NavigationLink(destination: RootTabbedView(), isActive: $isLoggedIn) {
+
+                NavigationLink(destination: RootTabbedView(isLoggedIn: $isLoggedIn), isActive: $isLoggedIn) {
                     Button(action: {
                         attemptinglogin = true
                         CSAPI().loginRequest(username: username, password: password) { (info) in
@@ -63,12 +62,11 @@ struct LoginView : View {
                                 isLoggedIn = true
                             }
                             else{
-                                attemptinglogin = false
                                 print("Login Failed")
-                                //error message popup
                             }
                         }
-                    }) {
+                    }
+                           ) {
                         Text("LOGIN")
                             .font(.headline)
                             .foregroundColor(.white)

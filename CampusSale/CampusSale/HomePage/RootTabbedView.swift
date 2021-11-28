@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RootTabbedView: View {
+    @Binding var isLoggedIn: Bool
 //    @Binding var isLoggedIn: Bool
 //
 //   init(isLoggedIn: Binding<Bool>) {
@@ -22,30 +23,22 @@ struct RootTabbedView: View {
 
     var body: some View {
         TabView {
-            NavigationView {
-                FeedTab(searchText: "", places: Place.samples())
-            }
-            .navigationTitle("Feed")
+            FeedTab(searchText: "")
             .tabItem {
                 Label("Feed", systemImage: "house")
             }
-            
-            NavigationView {
-                UserItemsTab()
-            }
-            .navigationTitle("Your Items")
+            UserItemsTab(searchText: "")
             .tabItem {
                 Label("Your Items", systemImage: "list.bullet")
             }
 
-            NavigationView {
-                UserProfileTab()
-            }
-            .navigationTitle("Profile")
+            UserProfileTab()
             .tabItem {
                 Label("Profile", systemImage: "person")
             }
         }
+        .navigationBarBackButtonHidden(isLoggedIn)
+        .navigationBarHidden(isLoggedIn)
         Spacer()
     }
 }
