@@ -14,6 +14,11 @@ struct ItemListingView : View {
     @State var item: Product
     @State var sellerData = UserData(user_id: 0, fname: "", lname: "", username: "", bio: "", create_date: "", phone_number: 0, graduation_term: 0, on_campus: 0)
     
+    @State private var showingAlert = false
+    var alert: Alert {
+            Alert(title: Text("This user prefers to be texted directly."), message: Text(""), dismissButton: .default(Text("Dismiss")))
+        }
+    
     var body: some View {
         
         Form{
@@ -41,7 +46,9 @@ struct ItemListingView : View {
             }
             
             Section{
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    showingAlert = true
+                }, label: {
                     Text("Contact")
                 })
                 
@@ -51,7 +58,7 @@ struct ItemListingView : View {
             CSAPI().sellerIDInfoRequest(user_id: item.seller_id) { (parsedData) in
                 self.sellerData = parsedData
             }
-        }
+        }.alert(isPresented: $showingAlert, content: { self.alert })
     }
     
 }

@@ -20,23 +20,24 @@ struct RegistrationView : View {
     @State private var bio = ""
     @State private var phone_number = ""
     @State private var graduation_term = ""
-    @State private var on_campus = ""
+    @State private var on_campus = 0
     //    @State private var birthDate = Date()
     
     @State private var showingAlert = false
+    @State private var selection = 0
     var alert: Alert {
-            Alert(title: Text("Successfully Created Account"), message: Text(""), dismissButton: .default(Text("Dismiss")))
-        }
+        Alert(title: Text("Successfully Created Account"), message: Text(""), dismissButton: .default(Text("Dismiss")))
+    }
     
-//    enum Grad_Term: Int, CaseIterable, Identifiable {
-//        case 2022;
-//        case 2023
-//        case 2024
-//        case 2025
-//        case 2026
-//
-//        var id: Int { self.rawValue }
-//    }
+    //    enum Grad_Term: Int, CaseIterable, Identifiable {
+    //        case 2022;
+    //        case 2023
+    //        case 2024
+    //        case 2025
+    //        case 2026
+    //
+    //        var id: Int { self.rawValue }
+    //    }
     
     
     
@@ -62,43 +63,55 @@ struct RegistrationView : View {
                 //                                            Text(gender.rawValue.capitalized).tag(gender)
                 //                                        }
                 //                            }.pickerStyle(SegmentedPickerStyle())
-//                Picker("Graduation Term", selection: $graduation_term) {
-//                    ForEach(Grad_Term.allCases) { gradterm in
-//                        Text(gradterm.rawValue.capitalized).tag(gradterm)
-//                    }
-//                }
+                //                Picker("Graduation Term", selection: $graduation_term) {
+                //                    ForEach(Grad_Term.allCases) { gradterm in
+                //                        Text(gradterm.rawValue.capitalized).tag(gradterm)
+                //                    }
+                //                }
                 TextField("Graduation Term", text: $graduation_term)
                 
-                TextField("On Campus, 1 for Yes, 0 for No", text: $on_campus)
-                
-                
-//                Picker("Class", selection: $gender) {
-//                    ForEach(Standing.allCases) { standing in
-//                        Text(standing.rawValue.capitalized).tag(standing)
-//                    }
-//                }
-                
+                Picker("On Campus", selection: $on_campus) {
+                    Text("On Campus").tag(1)
+                    Text("Off Campus").tag(0)
+                }
+                .pickerStyle(.segmented)
                 
             }
+            Section(header: Text("Preferred Method of Communication")) {
+                Picker("Preferred Style of Communication", selection: $selection) {
+                    Text("Text").tag(0)
+                    Text("Email").tag(1)
+                    Text("Call").tag(2)
+                }
+                .pickerStyle(.segmented)
+            }
+            //                Picker("Class", selection: $gender) {
+            //                    ForEach(Standing.allCases) { standing in
+            //                        Text(standing.rawValue.capitalized).tag(standing)
+            //                    }
+            //                }
+            
+            
+            
             Button(action: {
                 self.showAlert = true
                 self.showingAlert = true
                 
-                CSAPI().registerUserRequest(username: username, password: password1, fname: fname, lname: lname, bio: bio, phone_number: Int(phone_number)!, graduation_term: Int(graduation_term)!, on_campus: Int(on_campus)!) {(info) in
+                CSAPI().registerUserRequest(username: username, password: password1, fname: fname, lname: lname, bio: bio, phone_number: Int(phone_number)!, graduation_term: Int(graduation_term)!, on_campus: on_campus) {(info) in
                     
                 }
-//                CSAPI().registerProfileRequest(username: username, password: password1) {(info) in
-//
-//                }
+                //                CSAPI().registerProfileRequest(username: username, password: password1) {(info) in
+                //
+                //                }
                 
             }, label: { Text("Submit" )})
-//                .alert(isPresented: $showAlert) {
-//                    Alert(
-//                        title: Text("Succesfully Submitted"),
-//                        message: Text("Verify account using email link"),
-//                        dismissButton: .default(Text("Close"))
-//                    )
-//                }
+            //                .alert(isPresented: $showAlert) {
+            //                    Alert(
+            //                        title: Text("Succesfully Submitted"),
+            //                        message: Text("Verify account using email link"),
+            //                        dismissButton: .default(Text("Close"))
+            //                    )
+            //                }
         }
         .navigationBarTitle(Text("Register"))
         .alert(isPresented: $showingAlert, content: { self.alert })
