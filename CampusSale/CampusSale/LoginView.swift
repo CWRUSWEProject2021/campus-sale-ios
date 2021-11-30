@@ -18,6 +18,10 @@ struct LoginView : View {
     @State var password: String = ""
     @State var isLoggedIn: Bool = false
     @State var attemptinglogin: Bool = false
+    @State private var showingAlert = false
+    var alert: Alert {
+            Alert(title: Text("Wrong Username or Password"), message: Text("Please Try Again"), dismissButton: .default(Text("Dismiss")))
+        }
     
     var body: some View {
         NavigationView{
@@ -63,6 +67,7 @@ struct LoginView : View {
                             }
                             else{
                                 print("Login Failed")
+                                showingAlert = true
                             }
                         }
                     }
@@ -98,7 +103,9 @@ struct LoginView : View {
             
             
         }.navigationBarHidden(true)
+            .alert(isPresented: $showingAlert, content: { self.alert })
     }
+    
 }
 
 private let itemFormatter: DateFormatter = {
