@@ -8,15 +8,15 @@
 import Foundation
 
 struct UserData: Codable {
-    let user_id: String
+    let user_id: Int
     let fname: String
     let lname: String
     let username: String
     let bio: String
     let create_date: String
-    let phone_number: String
-    let graduation_term: String
-    let on_campus: String
+    let phone_number: Int
+    let graduation_term: Int
+    let on_campus: Int
 }
 
 struct UserProfileData: Codable {

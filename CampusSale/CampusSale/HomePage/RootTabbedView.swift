@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RootTabbedView: View {
     @Binding var isLoggedIn: Bool
+    @State var username: String
 //    @Binding var isLoggedIn: Bool
 //
 //   init(isLoggedIn: Binding<Bool>) {
@@ -32,7 +33,7 @@ struct RootTabbedView: View {
                 Label("Your Items", systemImage: "list.bullet")
             }
 
-            UserProfileTab()
+            UserProfileTab(username: username)
             .tabItem {
                 Label("Profile", systemImage: "person")
             }

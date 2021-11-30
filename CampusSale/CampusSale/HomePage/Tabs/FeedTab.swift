@@ -20,6 +20,7 @@ struct FeedTab: View {
                     CSAPI().requestAllItems { (parsedData) in
                         self.items = parsedData
                     }
+                   
 //                    .onAppear {
 //                        CSAPI().requestAllItems { (parsedData) in
 //                            self.items = parsedData

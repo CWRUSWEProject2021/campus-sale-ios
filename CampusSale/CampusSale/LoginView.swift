@@ -52,7 +52,7 @@ struct LoginView : View {
                     .cornerRadius(5.0)
                     .padding(.bottom, 10)
 
-                NavigationLink(destination: RootTabbedView(isLoggedIn: $isLoggedIn), isActive: $isLoggedIn) {
+                NavigationLink(destination: RootTabbedView(isLoggedIn: $isLoggedIn, username: username), isActive: $isLoggedIn) {
                     Button(action: {
                         attemptinglogin = true
                         CSAPI().loginRequest(username: username, password: password) { (info) in
@@ -97,7 +97,7 @@ struct LoginView : View {
             .navigationBarHidden(true)
             
             
-        }
+        }.navigationBarHidden(true)
     }
 }
 

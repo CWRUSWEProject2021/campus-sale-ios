@@ -156,4 +156,53 @@ class CSAPI {
             }
         }.resume()
     }
+    
+    func userInfoRequest(username: String, completion: @escaping (UserData) -> ()) {
+        guard let url = URL(string: "http://127.0.0.1:5000/user/\(username)") else {
+            print("Error: cannot create URL")
+            return
+        }
+        // Create the url request
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard error == nil else {
+                print("Error: error calling GET")
+                print(error!)
+                return
+            }
+            guard let data = data else {
+                print("Error: Did not receive data")
+                return
+            }
+            guard let response = response as? HTTPURLResponse, (200 ..< 299) ~= response.statusCode else {
+                print("Error: HTTP request failed")
+                return
+            }
+            do {
+                guard let jsonObject = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+                    print("Error: Cannot convert data to JSON object")
+                    return
+                }
+                guard let prettyJsonData = try? JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted) else {
+                    print("Error: Cannot convert JSON object to Pretty JSON data")
+                    return
+                }
+                guard let prettyPrintedJson = String(data: prettyJsonData, encoding: .utf8) else {
+                    print("Error: Could print JSON in String")
+                    return
+                }
+                let decoder = JSONDecoder()
+                let parsedData = try! decoder.decode(UserData.self, from: data)
+                DispatchQueue.main.async {
+                    let userData = UserData(user_id: parsedData.user_id, fname: parsedData.fname, lname: parsedData.lname, username: parsedData.username, bio: parsedData.bio, create_date: parsedData.create_date, phone_number: parsedData.phone_number, graduation_term: parsedData.graduation_term, on_campus: parsedData.on_campus)
+                    completion(userData)
+                }
+            }
+            catch {
+                print("Error: Trying to convert JSON data to string")
+                return
+            }
+        }.resume()
+    }
 }

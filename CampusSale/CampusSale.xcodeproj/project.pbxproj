@@ -15,6 +15,9 @@
 		071F85EB2717594200979CFC /* CampusSaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F85EA2717594200979CFC /* CampusSaleTests.swift */; };
 		071F85F62717594200979CFC /* CampusSaleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F85F52717594200979CFC /* CampusSaleUITests.swift */; };
 		071F860527175E5600979CFC /* Siesta in Frameworks */ = {isa = PBXBuildFile; productRef = 071F860427175E5600979CFC /* Siesta */; };
+		072AE86C27558BEE00B956AF /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072AE86B27558BEE00B956AF /* ItemRow.swift */; };
+		072AE86D27558BEF00B956AF /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072AE86B27558BEE00B956AF /* ItemRow.swift */; };
+		072AE86E27558BEF00B956AF /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072AE86B27558BEE00B956AF /* ItemRow.swift */; };
 		074AE79D2723526F00A0FBF1 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateEventView.swift */; };
 		074AE79E2723526F00A0FBF1 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateEventView.swift */; };
 		074AE79F2723526F00A0FBF1 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateEventView.swift */; };
@@ -87,6 +90,7 @@
 		071F85F12717594200979CFC /* CampusSaleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusSaleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		071F85F52717594200979CFC /* CampusSaleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusSaleUITests.swift; sourceTree = "<group>"; };
 		071F85F72717594200979CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		072AE86B27558BEE00B956AF /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		074AE79C2723526F00A0FBF1 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
 		07506BE62742336300B5D9C0 /* FeedTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTab.swift; sourceTree = "<group>"; };
 		07506BEA2742338A00B5D9C0 /* RootTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabbedView.swift; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 				07506BE52742335100B5D9C0 /* Tabs */,
 				078F51D1271CD3F200E57474 /* HomePageView.swift */,
 				07506BEA2742338A00B5D9C0 /* RootTabbedView.swift */,
+				072AE86B27558BEE00B956AF /* ItemRow.swift */,
 				078F51D5271CD47D00E57474 /* SearchBar.swift */,
 				078F51D9271CD4BD00E57474 /* Place.swift */,
 				078F51DD271CD53200E57474 /* PlaceView.swift */,
@@ -380,6 +385,7 @@
 				07506BF727423E6B00B5D9C0 /* CSAPI.swift in Sources */,
 				078F51DE271CD53200E57474 /* PlaceView.swift in Sources */,
 				07506BE72742336300B5D9C0 /* FeedTab.swift in Sources */,
+				072AE86C27558BEE00B956AF /* ItemRow.swift in Sources */,
 				07506BEF274233EA00B5D9C0 /* UserItemsTab.swift in Sources */,
 				078F51E2271CD59100E57474 /* ItemListingView.swift in Sources */,
 				078F51DA271CD4BD00E57474 /* Place.swift in Sources */,
@@ -404,6 +410,7 @@
 				071F85EB2717594200979CFC /* CampusSaleTests.swift in Sources */,
 				07506BE82742336300B5D9C0 /* FeedTab.swift in Sources */,
 				07506BEC2742338A00B5D9C0 /* RootTabbedView.swift in Sources */,
+				072AE86D27558BEF00B956AF /* ItemRow.swift in Sources */,
 				078F51D7271CD47D00E57474 /* SearchBar.swift in Sources */,
 				07506BF827423E6B00B5D9C0 /* CSAPI.swift in Sources */,
 				078F51D3271CD3F200E57474 /* HomePageView.swift in Sources */,
@@ -424,6 +431,7 @@
 				071F85F62717594200979CFC /* CampusSaleUITests.swift in Sources */,
 				07506BE92742336300B5D9C0 /* FeedTab.swift in Sources */,
 				07506BED2742338A00B5D9C0 /* RootTabbedView.swift in Sources */,
+				072AE86E27558BEF00B956AF /* ItemRow.swift in Sources */,
 				078F51D8271CD47D00E57474 /* SearchBar.swift in Sources */,
 				07506BF927423E6B00B5D9C0 /* CSAPI.swift in Sources */,
 				078F51D4271CD3F200E57474 /* HomePageView.swift in Sources */,

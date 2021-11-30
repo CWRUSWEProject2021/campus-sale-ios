@@ -8,52 +8,69 @@
 import SwiftUI
 
 struct UserProfileTab: View {
+    @State var username: String
+    @State var userData = UserData(user_id: 0, fname: "", lname: "", username: "", bio: "", create_date: "", phone_number: 0, graduation_term: 0, on_campus: 0)
+
+    
     var body: some View {
-        VStack {
+        
+        if #available(iOS 15.0, *) {
             VStack {
-                Image(systemName: "person.crop.circle")
-                    .resizable()
-                    .frame(width: 120, height: 120)
-                    .clipShape(Circle())
-                Text("test_fname1 test_lname1")
-                    .font(.title)
-                    .bold()
+                VStack {
+                    Image(systemName: "person.crop.circle")
+                        .resizable()
+                        .frame(width: 120, height: 120)
+                        .clipShape(Circle())
+                    Text("\(userData.fname) \(userData.lname)")
+                        .font(.title)
+                        .bold()
+                }
+                
+                Spacer().frame(height: 30)
+              
+                VStack(alignment: .leading, spacing: 12) {
+                    Text("\(userData.bio)")
+                    HStack {
+                        Image(systemName: "envelope")
+                        Text("\(userData.username)")
+                    }
+                    
+                    HStack {
+                        Image(systemName: "phone")
+                        Text("\(String(userData.phone_number))")
+                    }
+                    HStack {
+                        Image(systemName: "graduationcap")
+                        Text("\(String(userData.graduation_term))")
+                    }
+                }
+                
+                Spacer().frame(height: 30)
+                
+                NavigationLink(destination: LoginView(),
+                label : {
+                    Text("Log Out")
+                        .bold()
+                        .frame(width: 260, height: 50)
+                        .background(Color.red)
+                        .foregroundColor(.white)
+                        .cornerRadius(12)
+                }).navigationBarBackButtonHidden(true)
+            }.onAppear() {
+                CSAPI().userInfoRequest(username: username) { (parsedData) in
+                    self.userData = parsedData
+                }
             }
-        
-        Spacer().frame(height: 30)
-        
-        VStack(alignment: .leading, spacing: 12) {
-            HStack {
-                Image(systemName: "envelope")
-                Text("Test_user1")
-            }
-            
-            HStack {
-                Image(systemName: "phone")
-                Text("1234567890")
-            }
+                
+        } else {
+            // Fallback on earlier versions
         }
-        
-        Spacer().frame(height: 30)
-        
-        Button {
-            print("Button Tapped")
-        }
-        label : {
-            Text("Log Out")
-                .bold()
-                .frame(width: 260, height: 50)
-                .background(Color.red)
-                .foregroundColor(.white)
-                .cornerRadius(12)
-        }
-    }
 }
 }
 
 
-struct UserProfileTab_Previews: PreviewProvider {
-    static var previews: some View {
-        UserProfileTab()
-    }
-}
+//struct UserProfileTab_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UserProfileTab()
+//    }
+//}

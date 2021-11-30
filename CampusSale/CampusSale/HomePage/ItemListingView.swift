@@ -16,12 +16,12 @@ struct ItemListingView : View {
     var body: some View {
         Form{
             Section{
-                Text("Item Name: \(item.name)")
-                Text("Item Description: \(item.description)")
+                Text("Item Name:  \(item.name)")
+                Text("Item Description:  \(item.description)")
                     .lineLimit(4)
                     .multilineTextAlignment(.leading)
                     .frame(minWidth: 100, maxWidth: 200, minHeight: 100, maxHeight: .infinity, alignment: .topLeading)
-                Text("Item Price: \(item.price)")
+                Text("Item Price:  \(item.price)")
                 Text("Item Tags:")
             }
             
