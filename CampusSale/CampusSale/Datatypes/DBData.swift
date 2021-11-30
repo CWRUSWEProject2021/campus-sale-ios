@@ -45,6 +45,12 @@ struct CreateAccount: Encodable {
     let on_campus: Int
 }
 
+struct CreateProduct: Encodable {
+    let name: String
+    let price: Float
+    let description: String
+    let keywords: String
+}
 struct Product: Codable, Identifiable{
     var id: Int { product_id }
     let description: String

@@ -14,7 +14,7 @@ struct FeedTab: View {
         VStack() {
             SearchBar(text1: $searchText)
             if #available(iOS 15.0, *) {
-                List((items.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) }))) { item in
+                List((items.filter({ searchText.isEmpty ? true : $0.keywords.contains(searchText) || $0.name.contains(searchText)}))) { item in
                     NavigationLink(item.name, destination: ItemListingView(item: item))}
                 .refreshable {
                     CSAPI().requestAllItems { (parsedData) in

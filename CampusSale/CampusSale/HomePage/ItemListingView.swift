@@ -25,7 +25,7 @@ struct ItemListingView : View {
                     .multilineTextAlignment(.leading)
                     .frame(minWidth: 100, maxWidth: 200, minHeight: 100, maxHeight: .infinity, alignment: .topLeading)
                 Text("Item Price:  \(item.price)")
-                Text("Item Tags:")
+                Text("Item Tags:  \(item.keywords)")
             }
             
             Section (header: Text("Seller Information")){

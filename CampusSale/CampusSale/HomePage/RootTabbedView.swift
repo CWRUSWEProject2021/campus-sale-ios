@@ -28,7 +28,7 @@ struct RootTabbedView: View {
             .tabItem {
                 Label("Feed", systemImage: "house")
             }
-            UserItemsTab(searchText: "")
+            UserItemsTab(searchText: "", username: username)
             .tabItem {
                 Label("Your Items", systemImage: "list.bullet")
             }

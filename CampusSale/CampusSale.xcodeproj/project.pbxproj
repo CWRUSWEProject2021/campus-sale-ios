@@ -18,9 +18,9 @@
 		072AE86C27558BEE00B956AF /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072AE86B27558BEE00B956AF /* ItemRow.swift */; };
 		072AE86D27558BEF00B956AF /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072AE86B27558BEE00B956AF /* ItemRow.swift */; };
 		072AE86E27558BEF00B956AF /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072AE86B27558BEE00B956AF /* ItemRow.swift */; };
-		074AE79D2723526F00A0FBF1 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateEventView.swift */; };
-		074AE79E2723526F00A0FBF1 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateEventView.swift */; };
-		074AE79F2723526F00A0FBF1 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateEventView.swift */; };
+		074AE79D2723526F00A0FBF1 /* CreateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateItemView.swift */; };
+		074AE79E2723526F00A0FBF1 /* CreateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateItemView.swift */; };
+		074AE79F2723526F00A0FBF1 /* CreateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AE79C2723526F00A0FBF1 /* CreateItemView.swift */; };
 		07506BE72742336300B5D9C0 /* FeedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BE62742336300B5D9C0 /* FeedTab.swift */; };
 		07506BE82742336300B5D9C0 /* FeedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BE62742336300B5D9C0 /* FeedTab.swift */; };
 		07506BE92742336300B5D9C0 /* FeedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07506BE62742336300B5D9C0 /* FeedTab.swift */; };
@@ -91,7 +91,7 @@
 		071F85F52717594200979CFC /* CampusSaleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusSaleUITests.swift; sourceTree = "<group>"; };
 		071F85F72717594200979CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		072AE86B27558BEE00B956AF /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
-		074AE79C2723526F00A0FBF1 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
+		074AE79C2723526F00A0FBF1 /* CreateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemView.swift; sourceTree = "<group>"; };
 		07506BE62742336300B5D9C0 /* FeedTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTab.swift; sourceTree = "<group>"; };
 		07506BEA2742338A00B5D9C0 /* RootTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabbedView.swift; sourceTree = "<group>"; };
 		07506BEE274233EA00B5D9C0 /* UserItemsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemsTab.swift; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 				078F51D9271CD4BD00E57474 /* Place.swift */,
 				078F51DD271CD53200E57474 /* PlaceView.swift */,
 				078F51E1271CD59100E57474 /* ItemListingView.swift */,
-				074AE79C2723526F00A0FBF1 /* CreateEventView.swift */,
+				074AE79C2723526F00A0FBF1 /* CreateItemView.swift */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 				078F51D6271CD47D00E57474 /* SearchBar.swift in Sources */,
 				07506BF3274234AC00B5D9C0 /* UserProfileTab.swift in Sources */,
 				935B89592741A428001FCAD8 /* Test.swift in Sources */,
-				074AE79D2723526F00A0FBF1 /* CreateEventView.swift in Sources */,
+				074AE79D2723526F00A0FBF1 /* CreateItemView.swift in Sources */,
 				071F85E02717594100979CFC /* CampusSale.xcdatamodeld in Sources */,
 				07506BF727423E6B00B5D9C0 /* CSAPI.swift in Sources */,
 				078F51DE271CD53200E57474 /* PlaceView.swift in Sources */,
@@ -406,7 +406,7 @@
 				07506BF4274234AC00B5D9C0 /* UserProfileTab.swift in Sources */,
 				07506BF0274233EA00B5D9C0 /* UserItemsTab.swift in Sources */,
 				078F51DF271CD53200E57474 /* PlaceView.swift in Sources */,
-				074AE79E2723526F00A0FBF1 /* CreateEventView.swift in Sources */,
+				074AE79E2723526F00A0FBF1 /* CreateItemView.swift in Sources */,
 				071F85EB2717594200979CFC /* CampusSaleTests.swift in Sources */,
 				07506BE82742336300B5D9C0 /* FeedTab.swift in Sources */,
 				07506BEC2742338A00B5D9C0 /* RootTabbedView.swift in Sources */,
@@ -427,7 +427,7 @@
 				07506BF5274234AC00B5D9C0 /* UserProfileTab.swift in Sources */,
 				07506BF1274233EA00B5D9C0 /* UserItemsTab.swift in Sources */,
 				078F51E0271CD53200E57474 /* PlaceView.swift in Sources */,
-				074AE79F2723526F00A0FBF1 /* CreateEventView.swift in Sources */,
+				074AE79F2723526F00A0FBF1 /* CreateItemView.swift in Sources */,
 				071F85F62717594200979CFC /* CampusSaleUITests.swift in Sources */,
 				07506BE92742336300B5D9C0 /* FeedTab.swift in Sources */,
 				07506BED2742338A00B5D9C0 /* RootTabbedView.swift in Sources */,

@@ -10,6 +10,7 @@ import SwiftUI
 struct UserItemsTab: View {
     @State var searchText: String
     @State var items: [Product] = []
+    @State var username: String
     
     var body: some View {
         VStack {
@@ -19,7 +20,7 @@ struct UserItemsTab: View {
                     List((items.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) }))) { item in
                         NavigationLink(item.name, destination: ItemListingView(item: item))}
                     .refreshable {
-                        CSAPI().userProductRequest(username: "test_user1") { (parsedData) in
+                        CSAPI().userProductRequest(username: username) { (parsedData) in
                             self.items = parsedData
                         }
     //                    .onAppear {
@@ -36,7 +37,7 @@ struct UserItemsTab: View {
                 }
         }
             NavigationLink(destination:
-                            CreateEventView()){
+                            CreateItemView(username: username)){
                 Image(systemName: "plus")
                                     .resizable()
                                     .padding(6)

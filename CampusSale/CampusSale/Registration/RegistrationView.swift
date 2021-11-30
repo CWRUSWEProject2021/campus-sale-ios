@@ -69,7 +69,7 @@ struct RegistrationView : View {
 //                }
                 TextField("Graduation Term", text: $graduation_term)
                 
-                TextField("On Campus", text: $on_campus)
+                TextField("On Campus, 1 for Yes, 0 for No", text: $on_campus)
                 
                 
 //                Picker("Class", selection: $gender) {

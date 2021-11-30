@@ -31,7 +31,7 @@ struct UserProfileTab: View {
                 VStack(alignment: .leading, spacing: 12) {
                     Text("\(userData.bio)")
                     HStack {
-                        Image(systemName: "envelope")
+                        Image(systemName: "person")
                         Text("\(userData.username)")
                     }
                     
