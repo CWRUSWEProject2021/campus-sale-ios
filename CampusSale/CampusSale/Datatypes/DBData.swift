@@ -24,7 +24,7 @@ struct UserProfileData: Codable {
     let user_id: Int
 }
 
-struct loginInfo {
+struct loginInfo: Encodable {
     let username: String
     let password: String
 }
@@ -32,6 +32,17 @@ struct loginInfo {
 struct UserLoginInfo {
     let username: String
     let password: String
+}
+
+struct CreateAccount: Encodable {
+    let fname: String
+    let lname: String
+    let username: String
+    let password: String
+    let bio: String
+    let phone_number: Int
+    let graduation_term: Int
+    let on_campus: Int
 }
 
 struct Product: Codable, Identifiable{

@@ -29,8 +29,8 @@ struct ItemListingView : View {
             }
             
             Section (header: Text("Seller Information")){
-                Text("Seller Name: \(sellerData.fname) \(sellerData.lname)")
-                Text("Phone Number: \(sellerData.phone_number)")
+                Text("Seller Name: \(sellerData.username)")
+                Text("Phone Number: \(String(sellerData.phone_number))")
                 if sellerData.on_campus == 1 {
                     Text("On Campus: Yes")
                 }
