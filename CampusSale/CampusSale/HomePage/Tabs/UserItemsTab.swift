@@ -10,6 +10,7 @@ import SwiftUI
 struct UserItemsTab: View {
     @State var searchText: String
     @State var items: [Product] = []
+    
     var body: some View {
         VStack {
             VStack() {
@@ -18,7 +19,7 @@ struct UserItemsTab: View {
                     List((items.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) }))) { item in
                         NavigationLink(item.name, destination: ItemListingView(item: item))}
                     .refreshable {
-                        CSAPI().requestAllItems { (parsedData) in
+                        CSAPI().userProductRequest(username: "test_user1") { (parsedData) in
                             self.items = parsedData
                         }
     //                    .onAppear {
